@@ -9,7 +9,7 @@ const Homepage = () => {
     
     useEffect(() => {
         console.log(uniqueId())
-      setroomId(uniqueId())
+      // setroomId(uniqueId())
     
       return () => {
         setroomId("")
@@ -25,7 +25,7 @@ const Homepage = () => {
 
     const changeRoomID=(event)=>{
         console.log(event.target.value)
-        // setroomId(event.target.value)
+        setroomId(event.target.value)
     }
   return (
     <div style={{height:"100vh"}}>
